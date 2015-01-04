@@ -1,0 +1,40 @@
+{
+  "name": "express-joi-validator",
+  "version": "0.1.0",
+  "description": "Express Middleware for Walmart's Joi Validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test-coverage": "istanbul cover _mocha -- -u exports -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Threadster/express-joi-validator.git"
+  },
+  "keywords": [
+    "express",
+    "joi",
+    "middleware"
+  ],
+  "author": "Josh Holloway",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Threadster/express-joi-validator/issues"
+  },
+  "homepage": "https://github.com/Threadster/express-joi-validator",
+  "dependencies": {
+    "boom": "^2.6.1",
+    "joi": "^5.1.0"
+  },
+  "peerDependencies": {
+    "joi": "^5.1.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.10.1",
+    "chai": "^1.10.0",
+    "express": "^4.10.6",
+    "istanbul": "^0.3.5",
+    "mocha": "^2.1.0",
+    "supertest": "^0.15.0"
+  }
+}
