@@ -1,6 +1,6 @@
 {
   "name": "express-joi-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express Middleware for Walmart's Joi Validator",
   "main": "index.js",
   "scripts": {
