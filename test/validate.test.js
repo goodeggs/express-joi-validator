@@ -3,7 +3,7 @@ var expect = require('chai').expect;
 var Joi = require('joi');
 var app = require('express')();
 var BodyParser = require('body-parser');
-var Validate = require('index');
+var Validate = require('../');
 
 app.use(BodyParser.json());
 
@@ -45,7 +45,7 @@ app.use(function (err, req, res, next) {
   res.status(err.output.statusCode).send(err.output.payload);
 });
 
-describe('validate', function () {
+describe('express-joi-validator tests', function () {
 
   it('should return 400 bad request if the url param is invalid', function (done) {
     request(app)

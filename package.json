@@ -14,7 +14,8 @@
   "keywords": [
     "express",
     "joi",
-    "middleware"
+    "middleware",
+    "validation"
   ],
   "author": "Josh Holloway",
   "license": "MIT",
