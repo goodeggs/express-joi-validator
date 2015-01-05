@@ -38,5 +38,8 @@
     "istanbul": "0.3.x",
     "mocha": "2.1.x",
     "supertest": "0.15.x"
+  },
+  "engines": {
+    "node": ">=0.10.30"
   }
 }
