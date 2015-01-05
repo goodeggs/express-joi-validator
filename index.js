@@ -1,5 +1,6 @@
 var Joi = require('joi');
 var Boom = require('boom');
+var Extend = require('extend');
 
 module.exports = function validate(schema, options) {
   options = options || {};
@@ -31,30 +32,9 @@ module.exports = function validate(schema, options) {
       }
 
       // copy the validated data to the req object
-      copyToObject(req, validated);
+      Extend(req, validated);
 
       return next();
     }
   }
 };
-
-/**
- * Copy the keys in the source object to the destination
- *
- * @param  {Object} dest The destination object to update
- * @param  {Object} src  The source object to copy
- * @return {Object}      The updated destination object
- */
-
-/* istanbul ignore next */
-function copyToObject(dest, src) {
-  if (src) {
-    for (var key in src) {
-      if (src.hasOwnProperty(key)) {
-        dest[key] = src[key];
-      }
-    }
-  }
-
-  return dest;
-}

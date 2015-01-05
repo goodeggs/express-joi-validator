@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Threadster/express-joi-validator",
   "dependencies": {
     "boom": "^2.6.1",
+    "extend": "^2.0.0",
     "joi": "^5.1.0"
   },
   "peerDependencies": {
