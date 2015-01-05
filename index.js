@@ -12,18 +12,12 @@ module.exports = function validate(schema, options) {
       return next();
     }
 
-    if (schema.params) {
-      toValidate.params = req.params;
-    }
-
-    if (schema.body) {
-      toValidate.body = req.body;
-    }
-
-    if (schema.query) {
-      toValidate.query = req.query;
-    }
-
+    ['params', 'body', 'query'].forEach(function (key) {
+      if (schema[key]) {
+        toValidate[key] = req[key];
+      }
+    });
+    
     return Joi.validate(toValidate, schema, options, onValidationComplete);
 
     function onValidationComplete(err, validated) {
