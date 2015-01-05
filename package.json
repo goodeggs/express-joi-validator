@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "test-coverage": "istanbul cover _mocha -- -u exports -R spec"
+    "coverage": "istanbul cover _mocha -- -u exports -R spec"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Threadster/express-joi-validator.git"
+    "url": "git@github.com:threadster/express-joi-validator.git"
   },
   "keywords": [
     "express",
@@ -19,9 +19,9 @@
   "author": "Josh Holloway",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Threadster/express-joi-validator/issues"
+    "url": "https://github.com/threadster/express-joi-validator/issues"
   },
-  "homepage": "https://github.com/Threadster/express-joi-validator",
+  "homepage": "https://github.com/threadster/express-joi-validator",
   "dependencies": {
     "boom": "^2.6.1",
     "extend": "^2.0.0",

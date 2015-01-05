@@ -1,6 +1,8 @@
 express-joi-validator
 ===========
 
+[![Build Status](https://travis-ci.org/Threadster/express-joi-validator.svg)](https://travis-ci.org/Threadster/express-joi-validator)
+
 Simple validation middleware for express using the [Joi](https://github.com/spumko/joi) validation suite.
 
 ## Installation
